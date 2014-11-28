@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 100px 0 0 100px;
+}
+
+a{
+  display: inline;
+  position: relative;
+}
+
+a:hover:after {
+  background: #b3b3b3;
+  color: white;
+  content: attr(title);
+  bottom: 26px;
+  left: 0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+a:hover:before {
+  border: solid;
+  border-color: #b3b3b3 transparent;
+  border-width: 6px 6px 0 6px;
+  bottom: 20px;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+}

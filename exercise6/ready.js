@@ -11,11 +11,15 @@ $(document).ready(function() {
 
   function writeText(word) {
     // Code goes here
-
+    $.each(word.split(""), function(i, letter){
+      setTimeout(function(){
+        $(".typewriter-text").append(letter);
+      }, delay * i);  
+    });
   }
 
   // calls the first words element, 'Awesome People', and not the rest;
-  writeText(words[0]); 
+  writeText(words[0]);
 
 
 
@@ -24,15 +28,15 @@ $(document).ready(function() {
 
 
 
-  /* BONUS
+  //  // BONUS
 
-  function writeWords(words) {
-    // Code goes here
-  }
+  // function writeWords(words) {
+  //   // Code goes here
+  // }
 
-  writeWords(words);
+  // writeWords(words);
 
-  */
+  
 
 
 });

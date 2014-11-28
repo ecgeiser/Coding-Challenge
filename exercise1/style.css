@@ -1,0 +1,16 @@
+
+.wrapper ul ul {
+  background-color: green;
+}
+
+.wrapper ul li:nth-child(even) {
+  color: red;
+}
+
+.wrapper > ul > li > ul > li:nth-child(3) {
+  color: blue;
+}
+
+.wrapper > ul > li:nth-last-child(-n+2) {
+  display: none;
+}
